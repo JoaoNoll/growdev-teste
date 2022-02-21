@@ -9,6 +9,10 @@ app.use(cors());
 //GIT -> versionador
 //GITHUB -> plataforma
 
+app.get('/',(request:Request, response:Response) =>{
+    return response.send('Ok')
+})
+
 app.listen(8080, () => {
     console.log('API rodando...');
 })
